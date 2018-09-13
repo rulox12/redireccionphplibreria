@@ -21,3 +21,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('returnURL/{referencia}', 'TransaccionController@returnURL');
+
+Route::post('notificacion/{referencia}', 'TransaccionController@notificacion');
+
+

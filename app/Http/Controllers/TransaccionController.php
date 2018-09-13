@@ -93,6 +93,14 @@ class TransaccionController extends Controller
         print_r($transaccion);
     }
 
+    public function notificacion()
+    {
+        $rest=json_decode(file_get_contents('php://input'), true);
+        print_r($rest);
+        
+      
+
+
     /**
      * Display the specified resource.
      *
